@@ -1,1 +1,39 @@
-.env
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.env
+.env.*
+
+# FastAPI/UVicorn
+*.log
+
+# Pydantic cache
+*.mypy_cache/
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Node / Vite
+node_modules/
+dist/
+build/
+
+# React/Vite
+frontend/.next/
+frontend/.turbo/
+frontend/.cache/
+frontend/.vite/
+frontend/dist/
+
+# Logs
+*.log
+*.pid
+
+# OS
+.DS_Store
+Thumbs.db
+
+backend/static/uploads

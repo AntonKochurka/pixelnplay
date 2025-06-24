@@ -1,0 +1,1 @@
+"""Routes made for special database object"""
