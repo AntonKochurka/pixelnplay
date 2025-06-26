@@ -3,7 +3,10 @@ import os
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-app = FastAPI()
+from utils.run import lifespan, setup_middlewares
+
+app = FastAPI(lifespan=lifespan)
+setup_middlewares(app)
 
 app.mount(
     "/static/uploads",
