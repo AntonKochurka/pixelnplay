@@ -6,7 +6,7 @@ export default function Header() {
       <nav className="container mx-auto flex items-center justify-between p-1">
         <Link to="/" className="font-russo text-4xl tracking-wide flex items-center gap-1">
           <span className="gr-text">Pixel&</span>
-          <span className="bg-gradient-to-tr from-indigo-800 to-violet-500 bg-clip-text text-transparent">
+          <span className="clr-gr-text">
             Play
           </span>
         </Link>
