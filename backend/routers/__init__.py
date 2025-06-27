@@ -1,1 +1,0 @@
-"""All routes in project"""

@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey
 from sqlalchemy.orm import relationship
 from database import Base
-from models.mixins import BaseMixin
+from utils.mixins import BaseMixin
 
 class Game(Base, BaseMixin):
     __tablename__ = "games"

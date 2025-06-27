@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from database import Base
-from models.mixins import BaseMixin
+from utils.mixins import BaseMixin
 
 class Image(Base, BaseMixin):
     __tablename__ = "images"

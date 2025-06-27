@@ -1,11 +1,11 @@
 from sqlalchemy import Column, String, Boolean, Date, ForeignKey, Integer
 from sqlalchemy.orm import relationship
 from database import Base
-from models.mixins import BaseMixin
 
-class User(Base, BaseMixin):
+class User(Base):
     __tablename__ = "users"
 
+    id = Column(Integer, primary_key=True, index=True)
     username = Column(String(32), unique=True, index=True, nullable=False)
     email = Column(String(128), unique=True, index=True, nullable=False)
 
@@ -24,7 +24,7 @@ class User(Base, BaseMixin):
     pfp = relationship("Image", backref="users")
 
     bio = Column(String(512), nullable=True)
-    language = Column(String(10), default="en")      
-    timezone = Column(String(64), default="UTC")     
+    language = Column(String(10), default="en")
+    timezone = Column(String(64), default="UTC")
 
     two_factor_enabled = Column(Boolean, default=False)

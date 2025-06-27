@@ -7,9 +7,10 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+from backend.apps._users import models
 from database import Base
 from config import settings
-from models import user, image, game
+from models import image, game
 
 config = context.config
 fileConfig(config.config_file_name)
