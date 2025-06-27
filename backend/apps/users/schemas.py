@@ -2,7 +2,7 @@ from pydantic import BaseModel, EmailStr
 from datetime import date
 from typing import Optional
 
-class LogInRequest(BaseModel):
+class LoginRequest(BaseModel):
     identifier: str
     password: str
 
