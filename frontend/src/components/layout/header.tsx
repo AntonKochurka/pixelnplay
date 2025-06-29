@@ -14,7 +14,7 @@ export default function Header() {
   const isActive = (path: string) => location.pathname.startsWith(path);
 
   return (
-    <header>
+    <header className="fixed p-4 top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md border-b-1 border-b-zinc-900">
       <nav className="container mx-auto flex items-center justify-between p-1">
         <Link to="/" className="font-russo text-4xl tracking-wide flex items-center gap-1">
           <span className="gr-text">Pixel&</span>
@@ -34,7 +34,7 @@ export default function Header() {
               </Link>
             ))}
           </div>
-          <ProfileMenu/>
+          <ProfileMenu />
         </div>
       </nav>
     </header>

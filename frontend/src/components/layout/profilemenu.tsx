@@ -22,15 +22,15 @@ export default function ProfileMenu() {
       needAuth: true,
     },
     {
-        label: "Log In",
-        icon: IoLogInOutline,
-        to: "/auth/login",
-        needAuth: false,
-    },
-    {
         label: "Register",
         icon: IoPersonAddOutline,
         to: "/auth/register",
+        needAuth: false,
+    },
+    {
+        label: "Log In",
+        icon: IoLogInOutline,
+        to: "/auth/login",
         needAuth: false,
     },
     {

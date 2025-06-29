@@ -30,7 +30,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, #18181b, #09090b);
+  background:  #18181b;
   border-radius: 100vh;
 }
 
